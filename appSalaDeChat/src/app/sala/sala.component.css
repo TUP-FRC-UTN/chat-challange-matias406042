@@ -1,0 +1,37 @@
+.scrollspy-example {
+    position: relative; /* Necesario para ScrollSpy */
+    height: 200px; 
+    overflow-y:auto; 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+  }
+  .container {
+    margin-top: 20px;
+  }
+
+  .label-container {
+    background-color: #f0f0f0; 
+    padding: 10px;
+    border-bottom: 2px solid #333; 
+  }
+
+  .label-container .label-text {
+    color: #555; 
+    font-weight: bold;
+  }
+  .clase-para-usuario-1 {
+    background-color: #d6d6d6; 
+  }
+  .clase-para-usuario-2 {
+    background-color: #d6d6d6;
+  }
+  
+  .message-container p {
+    margin: 0;
+  }
+  
+  .message-container .text-muted {
+    color: #70808f; 
+  }
+
+  

@@ -1,0 +1,39 @@
+.container {
+    margin-top: 20px;
+    padding: 0; /* Elimina padding extra del contenedor */
+  }
+
+  .tab-container {
+    background-color: #dcdcdc; /* Fondo gris para la solapa superior */
+    padding: 10px;
+    border-bottom: 2px solid #333; /* Línea oscura que divide */
+    border-radius: 0.25rem; /* Opcional: bordes redondeados */
+  }
+
+  .text-area-container {
+    background-color: #d4b8b8; /* Fondo blanco para el área de texto */
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde del contenedor */
+    border-top: none; /* Elimina la línea superior para evitar doble línea */
+    border-radius: 0.25rem; /* Opcional: bordes redondeados */
+    margin-top: -1px; /* Elimina el espacio entre el contenedor de la solapa y el área de texto */
+  }
+
+  .text-area-container .form-label {
+    color: #ffcbcb; 
+  }
+
+  .text-area-container textarea {
+    height: 150px; 
+    resize: none; 
+  }
+
+  .button-container {
+    margin-top: 10px;
+  }
+
+  .button-container .btn {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+

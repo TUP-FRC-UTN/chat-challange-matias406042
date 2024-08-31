@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="label-container">
+          <span class="label-text">Sala de Chat</span>
+        </div>
+        <div id="conversacionId" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+          <h4 id="list-item-1">Conversacion... </h4>
+
+          @for(msj of conversacion; track msj; let index = $index) {
+            
+            <div [ngClass]="{
+                'clase-para-usuario-1': msj.usuario === '1',
+                'clase-para-usuario-2': msj.usuario === '2'
+              }"
+            
+            class="message-container border rounded p-4 mb-3 ">
+                <div class="row mb-2">
+                  <div class="col-12 d-flex justify-content-between align-items-center">
+                    <p class="text-primary mb-0"><strong>Usuario:</strong> {{msj.usuario}}</p>
+                    <p class="fecha text-secondary mb-0 text-end"><strong>Enviado:</strong> {{msj.fechaEnvio| date: 'dd/MM/yyyy HH:mm' }}</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 mb-2">
+                    <p class="text-dark mb-0"><strong>Contenido:</strong></p>
+                    <p class="mb-0">{{msj.contenido}}</p>
+                  </div>
+                </div>
+              </div>
+          }
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-3">
+        <div class="col-md-6">   
+          
+          <app-chat1 (mensajeEnviado)="mensajeRecibido($event)"/>
+          
+         
+        </div>
+         <div class="col-md-6">   
+            <app-chat2 (mensajeEnviado)="mensajeRecibido($event)"/>
+         </div>
+      </div>
+    </div>
